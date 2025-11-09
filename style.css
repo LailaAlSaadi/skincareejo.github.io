@@ -1,0 +1,152 @@
+/* General & RTL Setup */
+body {
+    /* Use 'Cairo' for a clean Arabic look */
+    font-family: 'Cairo', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Very light, clean background */
+    color: #333;
+    line-height: 1.6;
+    /* Set default text direction to Right-to-Left (RTL) for Arabic */
+    direction: rtl; 
+    text-align: right; 
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+/* Header Styling - Gentle & inviting */
+header {
+    background-color: #d1e7f7; /* Soft Blue */
+    color: #1a1a1a;
+    padding: 2px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 3px 0;
+    font-size: 2.0em;
+    color: #007bff; /* Bright blue accent */
+}
+
+header p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.header-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 50px; /* Pill shape */
+    font-weight: bold;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+}
+
+.header-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Main Content & Headings */
+main h2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #495057;
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+/* Product Grid - Responsive layout */
+.product-grid {
+    display: grid;
+    /* 1 column on extra small screens, 2 on tablets, 3 on desktops */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+/* Product Card Styling */
+.product-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px; /* Fixed height for consistent look */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+}
+
+.product-card h3 {
+    color: #5aa9e6; /* Soft blue */
+    font-size: 1.6em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.product-card .description {
+    font-size: 0.95em;
+    color: #6c757d;
+    margin-bottom: 20px;
+    height: 50px; /* Ensure description has fixed height */
+    overflow: hidden;
+}
+
+.product-card .price {
+    font-size: 1.6em;
+    color: #e63946; /* Noticeable red for price */
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* Action Button */
+.btn {
+    display: block; /* Full width button */
+    background-color: #007bff;
+    color: white;
+    padding: 12px 0;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40; /* Dark gray */
+    color: #f8f9fa;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 5px 0;
+}
